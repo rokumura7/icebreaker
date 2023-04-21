@@ -1,0 +1,47 @@
+#slot-machine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#reel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: 80%;
+  border: 2px solid black;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.symbol {
+  font-size: 30px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+.symbol.displayed {
+  opacity: 1;
+  display: flex;
+}
+
+#spin-button {
+  padding: 10px;
+  font-size: 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+}
