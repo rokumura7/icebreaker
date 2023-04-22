@@ -1,4 +1,4 @@
-const randomIndex = () => Math.floor(Math.random() * symbols.length)
+const randomIndex = () => Math.floor(Math.random() * themes.length)
 
 const reel = document.getElementById('reel');
 const symbols = document.getElementsByClassName('symbol');
